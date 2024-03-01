@@ -21,3 +21,26 @@
     border: 2px solid teal;
     margin-top: 15px;
 }
+.myHeader {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.post-enter {
+    opacity: 0;
+    transform: translateX(-350px);
+  }
+  .post-enter-active {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+  }
+  .post-exit {
+    opacity: 1;
+  }
+  .post-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+  }

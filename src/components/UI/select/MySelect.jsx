@@ -2,7 +2,7 @@ import React from 'react';
 
 const MySelect = ({options, defaultValue, value, onChange}) => {
     return (
-        <select value={value}
+        <select style={{padding: 5, marginTop: 5}} value={value}
         onChange={event => onChange(event.target.value)}
         >
             <option disabled value="">{defaultValue}</option>
